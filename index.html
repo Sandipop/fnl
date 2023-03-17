@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="op.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="">Fun <span class="aspan">& </span>Learn</a>
+    </div>
+    <div class="hamburger scale-in-center">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+            
+            <li>
+                <a href="">About Us</a>
+            </li>
+            <li>
+                <a href="">Gallery</a>
+            </li>
+            <li>
+                <a href="#" class="active pulsate-fwd ">Games</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div class="home">
+    <div class="home-text">
+        <div class="wrap-home-text">
+        <h1 class="homeh1">Fun <span class="aspan">& </span> Learn</h1>
+        
+        <p class="homep">"Where Learning Meets Fun: Play, Explore, and Learn <br class="resbr"> with Fun & Learn"</p>
+        <a href="#" class=" home-btn">Know More</a>
+    </div>
+    </div>
+    <div class="home-img">
+        <img src="undraw_back_to_school_inwc.svg" alt="">
+
+    </div>
+    
+</div>
+
+
+    
+
+
+
+
+<script>
+    hamburger = document.querySelector(".hamburger");
+    
+    hamburger.onclick = function(){
+        navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("active");
+       
+        hamburger=document.querySelector(".hamburger");
+        hamburger.classList.toggle("active")
+
+    }
+    
+    
+</script>
+</body>
+</html>

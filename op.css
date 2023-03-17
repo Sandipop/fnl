@@ -1,0 +1,342 @@
+*{
+ margin: 0;
+ padding: 0;   
+
+ font-family: 'Poppins', sans-serif;
+ box-sizing: border-box;
+
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 250px;
+    
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+.logo a{
+    text-decoration: none;
+    list-style: none;
+    color: #000000;
+    font-size: 28px;
+    font-weight: 600;
+}
+.aspan{
+    color: #F9A826;
+}
+
+.hamburger{
+    display: none;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li a{
+    display: block;
+    color: #000000;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 0 5px;
+    list-style: none;
+    text-decoration: none;
+    transition: .25s;
+}
+.navbar ul li a:hover{
+    color: #F9A826;
+    
+}
+.navbar ul li a.active{
+    color: #000000;
+    background: #F9A826;
+}
+
+
+
+.home{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+
+}
+.home-text{
+    height: 100%;
+    width: 40%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-btn{
+    background-color: #F9A826;
+    color: #000000;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-top: 100px;
+    
+    text-decoration: none;
+    transition: 0.5s;
+    
+}
+.home-btn:hover{
+    border: 1px solid #F9A826;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.homeh1{
+    font-size: 70px;
+}
+
+.homep{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.home-img{
+    height: 100%;
+    width: 40%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-img img{
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For mobile screen */
+
+
+@media only screen and (max-width: 1320px){
+    header{
+        padding: 0 50px;
+    }
+    
+}
+@media only screen and (max-width: 1100px){
+    header{
+        padding: 0 30px;
+    }
+
+   
+}
+@media only screen and (max-width: 900px){
+    .logo a{
+    text-decoration: none;
+    list-style: none;
+    color: #000000;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        border-radius: 10px;
+        background: #000000;
+        margin: 6px 0;
+        transition: .5s;
+    }
+    .hamburger.active .line:nth-child(1){
+        transform: rotate(45deg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+    }
+    .hamburger.active .line:nth-child(2){
+        opacity: 0;
+        
+    }
+    .hamburger.active .line:nth-child(3){
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        
+    }
+    .navbar{
+        height: 0px;
+        /* display: none; */
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background:#ffffff ;
+        transition: 0.25s;
+        overflow: hidden;
+
+    }
+    .navbar.active{
+        height: 400px;
+        
+
+    }
+
+    .navbar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: .5s;
+        opacity: 0;
+    }
+    .navbar.active ul{
+        opacity: 1;
+        
+    }
+    .navbar ul li a{
+        margin-bottom: 20px;
+    }
+    .home{
+        /* border: 1px solid red; */
+        height: 50vh;
+    }
+    .home-text{
+        /* border: 1px solid red; */
+        width: 90%;
+    }
+    .resbr{
+        display: none;
+    }
+    
+
+    .home-img{
+        display: none;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Css snimations */
+
+.pulsate-fwd {
+	animation: pulsate-fwd 1s ease-in-out infinite both;
+}
+
+ @keyframes pulsate-fwd {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
+
+
+
+  .scale-in-center {
+	animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes scale-in-center {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
