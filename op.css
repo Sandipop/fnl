@@ -4,6 +4,7 @@
 
  font-family: 'Poppins', sans-serif;
  box-sizing: border-box;
+ scroll-behavior: smooth;
 
 }
 
@@ -117,6 +118,93 @@ header{
 
 
 
+/* aboutus */
+
+.aboutus{
+    height: 70vh;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.abouth1{
+    text-align: center;
+    font-size:50px ;
+    padding: 0 0 25px 0 ;
+}
+.aboutp{
+    text-align: center;
+    padding: 0px 300px 50px 300px;
+    font-size: 16px;
+}
+.aboutus li{
+    text-align: center;
+    list-style: circle;
+    
+}
+
+
+
+/* games */
+.gamesh1{
+    text-align: center;
+    font-size: 50px;
+}
+.game-container{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gamecard{
+    height: 280px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 70px 70px 70px;
+    /* border: 1px solid red; */
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+   
+}
+.cardwrap{
+    /* border: 1px solid red; */
+}
+.gamewraper{
+    /* border: 1px solid red; */
+    padding: 20px;
+    align-items: center;
+}
+.gamecard img{
+    align-items: center;
+    padding :0 50px 0 50px;
+    
+
+}
+.gamename{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.playbtn{
+    background-color: #F9A826;
+    color: #000000;
+    font-size: 16px;
+    padding: 12px 40px;
+    border-radius: 10px;
+    margin-left: 10px;
+    
+    text-decoration: none;
+    transition: 0.5s;
+    
+}
+.playbtn:hover{
+    border: 1px solid #F9A826;
+    background-color: #fff;
+    transition: 0.5s;
+}
 
 
 
@@ -261,6 +349,41 @@ header{
 
     .home-img{
         display: none;
+    }
+
+
+    .aboutus{
+        height: 70vh;
+        width: 100%;
+        /* border: 1px solid red; */
+    }
+    .abouth1{
+
+        font-size:40px ;
+    }
+    .aboutp{
+
+        padding:0 25px 0 25px;
+        font-size: 16px;
+    }
+    .aboutus li{
+        text-align: center;
+        list-style: circle;
+        padding: 0 25px 0 25px;
+        
+    }
+
+    
+    .game-container{
+        height: 190vh;
+        display: block;
+        /* border: 1px solid red; */
+        padding: 0 75px 0 40px;
+    }
+    .gamesh1{
+        font-size: 40px;
+        margin-bottom: 50px;
+        
     }
     
     
