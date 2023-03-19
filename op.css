@@ -256,9 +256,9 @@ footer {
     margin-right: 25px;
   }
   
-  footer ul li:last-child {
+  /* footer ul li:last-child {
     margin-right: 0;
-  }
+  } */
   footer ul li a img{
     width: 30px;
   }
@@ -444,6 +444,20 @@ footer {
         margin-bottom: 50px;
         
     }
+
+
+
+
+    footer ul li a img{
+        width: 20px;
+      }
+      
+      footer {
+        
+        font-size: 12px;
+        align-items: center;
+        
+      }
     
     
 }
